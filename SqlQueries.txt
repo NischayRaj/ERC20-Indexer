@@ -1,0 +1,39 @@
+create database erc;
+
+use erc;
+
+create table address(addressname varchar(35));
+
+insert into address values('OX24HCJHAOCJNFOIAJNCJCJCJKAJASFAF35');
+
+select * from address;
+
+create table token(tokenname varchar(35), totalsupply varchar(35));
+
+describe token;
+
+select * from token;
+
+create table addaddress(addname varchar(45));
+
+select * from addaddress;
+
+Delete from addaddress where addname = 'AYO096HMPLOHGS0PONGHNXKILYMADIOPE35';
+
+drop table address;
+
+delete from token where tokenname = "";
+
+create table transfer(From_ varchar(45), To_ varchar(45), Token_ varchar(35), Amount_ varchar(35));
+
+describe transfer;
+
+select * from transfer;
+
+Drop table transfer;
+
+delete from transfer where fromadd = "";
+
+create table purchase(add_ varchar(45), token_ varchar(45), amt_ varchar(45));
+
+select * from purchase;
